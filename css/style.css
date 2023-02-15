@@ -28,7 +28,6 @@ body {
   text-decoration: none;
 }
 .container {
-  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -36,7 +35,14 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
+
+
+
+
 /* -------------------------HEADER---------------------- */
 .top-header {
   height: 72px;
@@ -134,18 +140,17 @@ img {
 /* ------------HERO--------------------- */
 
 .hero-title {
-  max-width: 500px;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  max-width: 317px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin: 0 auto;
 }
 
 .hero {
-  max-width: 1440px;
-  height: 600px;
+  width: 100%;
   background-image: var(--gra-hero), url(../images/people_office.jpg);
   background-position: center;
   background-size: cover;
@@ -153,8 +158,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 192px;
-  padding-bottom: 192px;
+  padding-top: 112px;
+  padding-bottom: 109px;
 }
 
 .hero-btn {
@@ -170,7 +175,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
-  margin-top: 48px;
+  margin-top: 80px;
+
   transition: color 250ms linear, background-color 250ms linear;
 }
 .hero-btn:hover,
@@ -181,8 +187,8 @@ img {
 
 /* -----------------SLOGAN------------------------- */
 .slogan-sec {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .slogan {
@@ -198,26 +204,32 @@ img {
 }
 
 .slogan-item {
-  width: 264px;
+  /* width: 264px; */
+  max-width: 396px;
   min-height: 104px;
+  margin-bottom: 72px;
+
 }
 
 .title-slogan {
   font-family: inherit;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--desk-color);
   padding-bottom: 8px;
+  text-align: center;
 }
 
 .subtitle-slogan {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
+  flex-wrap: wrap;
+  justify-content:center ;
 }
 .text-slogan {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -259,8 +271,8 @@ img {
 /* ------------TEAM------------------- */
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-content {
@@ -281,14 +293,17 @@ img {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  row-gap: 72px;
+  flex-wrap: wrap;
+  /* justify-content: center; */
 }
 
 .team-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  max-width: 100%;
 }
 .team-name {
   font-family: inherit;
@@ -342,8 +357,10 @@ img {
 /* ----------Customers---------- */
 
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .customers-subtitle {
@@ -358,11 +375,14 @@ img {
 }
 .customers-list {
   display: flex;
-  gap: 24px;
+  column-gap: 16px;
+  row-gap: 72px;
+  flex-wrap: wrap;
 }
 
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  /* width: calc((100% - 120px) / 6); */
+  width: calc((100% - 16px) / 2);
   height: 90px;
 }
 
@@ -702,7 +722,7 @@ img {
 .modal-close:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border: 0;
+  border: 0;
 }
 
 .modal-title {

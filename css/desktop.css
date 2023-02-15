@@ -1,0 +1,51 @@
+@media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1158px;
+    }
+  
+    .subtitle-slogan {
+      flex-wrap: nowrap;
+    }
+  
+    .hero {
+      padding-bottom: 192px;
+      padding-top: 192px;
+    }
+    .slogan-sec {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  
+    .title-slogan {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    .customers-item{
+      width: calc((100% - 120px) / 6);
+    }
+  
+    .container-mini{
+  width: auto;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1159px) {
+    .container {
+      max-width: 1158px;
+    }
+  
+    .slogan-item-icon {
+      display: none;
+    }
+  
+    .galery {
+      display: none;
+    }
+  }
+  
