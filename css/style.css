@@ -294,8 +294,9 @@ img {
 .team-list {
   display: flex;
   row-gap: 72px;
+  column-gap: 24px;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .team-item {

@@ -21,6 +21,14 @@
       font-weight: 500;
     }
   
+    .team-list{
+      gap: 24px;
+    }
+
+    .team-item{
+      width: calc((100% - 72px) / 4);
+    }
+
     .customers-item{
       width: calc((100% - 120px) / 6);
     }

@@ -29,6 +29,15 @@
     text-align: start;
   }
 
+.team-list{
+  justify-content: start;
+  row-gap: 56px;
+}
+
+  .team-item{
+    width: calc((100% - 24px) / 2);
+  }
+
   .customers-item {
     width: calc((100% - 48px) / 3);
   }
