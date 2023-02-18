@@ -36,6 +36,14 @@
     .container-mini{
   width: auto;
   }
+
+  .top-mail{
+    font-size: 16px;
+  }
+
+  .top-phone{
+    font-size: 16px; 
+  }
   }
   
   
@@ -55,5 +63,7 @@
     .galery {
       display: none;
     }
+
+
   }
   

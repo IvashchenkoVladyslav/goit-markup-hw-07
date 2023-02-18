@@ -7,6 +7,83 @@
     width: 552px;
   }
 
+  .mob-menu,
+  .menu-open {
+    display: none;
+  }
+
+  .top-navigation {
+    display: flex;
+  }
+
+  .header-container {
+    display: flex;
+  }
+
+  .top-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .top-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--desk-color);
+    transition: color 250ms linear;
+  }
+
+  .top-link:hover,
+  .top-link:focus {
+    color: var(--button-color);
+  }
+
+  .top-mail {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color 250ms linear;
+  }
+
+  .top-phone {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color 250ms linear;
+  }
+
+  .address {
+    display: flex;
+    font-style: normal;
+    align-items: center;
+    margin-left: auto;
+    gap: 15px;
+  }
+
+  .top-phone:is(:hover, :focus),
+  .top-mail:is(:hover, :focus) {
+    color: var(--button-color);
+  }
+
+  .current {
+    color: var(--button-color);
+    position: relative;
+  }
+
+  .current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--button-color);
+  }
+
   .hero {
     padding-bottom: 112px;
   }
@@ -29,12 +106,12 @@
     text-align: start;
   }
 
-.team-list{
-  justify-content: start;
-  row-gap: 56px;
-}
+  .team-list {
+    justify-content: start;
+    row-gap: 56px;
+  }
 
-  .team-item{
+  .team-item {
     width: calc((100% - 24px) / 2);
   }
 
@@ -44,5 +121,38 @@
 
   .customers-list {
     column-gap: 24px;
+  }
+
+  .footer-all {
+    margin: 0;
+  }
+
+  .footer-logo {
+    justify-content: start;
+  }
+
+  .subtitle-soc {
+    text-align: start;
+    padding-top: 0;
+  }
+
+  .text-subscribe {
+    text-align: start;
+  }
+
+  .subscribe-form {
+    flex-wrap: nowrap;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+
+  .subscribe-btn {
+    margin-left: 24px;
+  }
+
+  .check-text{
+    font-size: 11px;
   }
 }
