@@ -215,7 +215,7 @@ img {
 
 .hero {
   width: 100%;
-  background-image: var(--gra-hero), url(../images/people_office.jpg);
+  background-image: var(--gra-hero), url(../images/image2.0/hero_mob.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -224,6 +224,14 @@ img {
   text-align: center;
   padding-top: 112px;
   padding-bottom: 109px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero  {
+      background-image: var(--gra-hero), url(../images/image2.0/hero_mob2x.jpg);
+  }
 }
 
 .hero-btn {

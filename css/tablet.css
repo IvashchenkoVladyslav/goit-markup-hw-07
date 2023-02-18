@@ -88,6 +88,19 @@
     padding-bottom: 112px;
   }
 
+  .hero{
+    background-image: var(--gra-hero), url(../images/people_office.jpg);
+  
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero  {
+        background-image: var(--gra-hero), url(../images/image2.0/people_office2x.jpg);
+    }
+  }
+
   .hero-title {
     font-size: 56px;
     font-weight: 700px;
