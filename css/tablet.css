@@ -60,7 +60,8 @@
     font-style: normal;
     align-items: center;
     margin-left: auto;
-    gap: 15px;
+    /* gap: 15px; */
+    flex-direction: column;
   }
 
   .top-phone:is(:hover, :focus),
@@ -107,8 +108,13 @@
     max-width: 492px;
   }
 
+  .slogan-sec{
+padding-bottom: 24px;
+  }
+
   .slogan-item {
     width: calc((100% - 24px) / 2);
+
   }
 
   .subtitle-slogan {
@@ -153,12 +159,17 @@
     text-align: start;
   }
 
+  .subscribe-item {
+    margin:0;
+  }
+
   .subscribe-form {
     flex-wrap: nowrap;
   }
 
   .subscribe-input {
     width: 264px;
+    margin-bottom: 0;
   }
 
   .subscribe-btn {

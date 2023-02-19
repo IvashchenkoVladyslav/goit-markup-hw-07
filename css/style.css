@@ -179,7 +179,6 @@ img {
 }
 .menu-soc-list {
   display: flex;
-  justify-content: center;
   column-gap: 35px;
 }
 .menu-soc-item {
@@ -279,6 +278,10 @@ img {
   /* width: 264px; */
   max-width: 396px;
   min-height: 104px;
+  /* margin-bottom: 72px; */
+}
+
+.slogan-item:not(:last-child){
   margin-bottom: 72px;
 }
 
@@ -571,7 +574,7 @@ img {
 }
 
 .subscribe-item {
-  /* margin-left: 16px; */
+  margin-left: auto;
 }
 
 .text-subscribe {

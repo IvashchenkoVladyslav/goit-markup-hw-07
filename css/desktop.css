@@ -2,6 +2,11 @@
     .container {
       max-width: 1158px;
     }
+
+    .address{
+      gap: 15px;
+      flex-direction: row;
+    }
   
     .subtitle-slogan {
       flex-wrap: nowrap;
@@ -44,6 +49,14 @@
   .top-phone{
     font-size: 16px; 
   }
+
+  .slogan-item{
+    margin-bottom: 0;
+  }
+
+  .footer-soc-list{
+    margin-bottom: 0;
+  }
   }
   
   
@@ -52,9 +65,9 @@
   
   
   @media screen and (max-width: 1159px) {
-    .container {
-      max-width: 1158px;
-    }
+    /* .container {
+      max-width: 768px;
+    } */
   
     .slogan-item-icon {
       display: none;
